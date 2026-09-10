@@ -106,9 +106,10 @@ public class NPCBrainC4 : MonoBehaviour
         hasLastKnownPosition = true;
 
         searchTimer = searchDuration;
+        searchSubState = SearchSubState.MovingToPoint;
         ChangeState(NPCState.Search);
     }
-        private void Start()
+    private void Start()
     {
         currentState = NPCState.Patrol;
         previousState = currentState;
