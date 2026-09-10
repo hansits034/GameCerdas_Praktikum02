@@ -20,6 +20,10 @@ public class NPCSensor : MonoBehaviour
 
     public Transform Player => player;
 
+    public float ViewRadius => viewRadius;
+
+    public float ViewAngle => viewAngle;
+
     private void Update()
     {
         DetectPlayer();
